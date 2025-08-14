@@ -56,7 +56,7 @@ const observer = new IntersectionObserver((entries) => {
 // Add fade-in class to elements and observe them
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
-    const cards = document.querySelectorAll('.project-card, .skill-category, .stat');
+    const cards = document.querySelectorAll('.skill-category, .stat');
     
     sections.forEach(section => {
         section.classList.add('fade-in');
@@ -219,7 +219,7 @@ function createBackToTopButton() {
         right: 20px;
         width: 50px;
         height: 50px;
-        background: #2563eb;
+        background: #1a365d;
         color: white;
         border: none;
         border-radius: 50%;
@@ -254,12 +254,12 @@ function createBackToTopButton() {
     
     // Hover effects
     backToTop.addEventListener('mouseenter', () => {
-        backToTop.style.background = '#1d4ed8';
+        backToTop.style.background = '#0f2027';
         backToTop.style.transform = 'translateY(-3px)';
     });
     
     backToTop.addEventListener('mouseleave', () => {
-        backToTop.style.background = '#2563eb';
+        backToTop.style.background = '#1a365d';
         backToTop.style.transform = 'translateY(0)';
     });
 }
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', createBackToTopButton);
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: #2563eb !important;
+        color: #1a365d !important;
     }
     
     .nav-link.active::after {
